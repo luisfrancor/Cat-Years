@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Years" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiQ-7g-sZZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your cat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOn-6h-f1C">
+                                <rect key="frame" x="0.0" y="82" width="375" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter age in human years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ex-Ev-vGL">
+                                <rect key="frame" x="110" y="135" width="155" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fF-PF-Y16">
+                                <rect key="frame" x="117" y="197" width="141" height="30"/>
+                                <state key="normal" title="Get Age In Cat Years"/>
+                                <connections>
+                                    <action selector="getAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Oe-ae-E0X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwS-NU-b3F">
+                                <rect key="frame" x="0.0" y="251" width="375" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.98106676339999999" green="0.27818651090000002" blue="0.18896612330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sam.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zFD-cE-5SF">
+                                <rect key="frame" x="68" y="312" width="238" height="273"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fF-PF-Y16" firstAttribute="top" secondItem="8ex-Ev-vGL" secondAttribute="bottom" constant="32" id="0wd-wZ-Qav"/>
+                            <constraint firstItem="8ex-Ev-vGL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="687-5x-6aQ"/>
+                            <constraint firstItem="zOn-6h-f1C" firstAttribute="top" secondItem="fiQ-7g-sZZ" secondAttribute="bottom" constant="20" id="8Ag-UR-uvh"/>
+                            <constraint firstItem="2fF-PF-Y16" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="G9H-5H-s3C"/>
+                            <constraint firstItem="zFD-cE-5SF" firstAttribute="centerX" secondItem="wwS-NU-b3F" secondAttribute="centerX" id="Hjn-JE-TOU"/>
+                            <constraint firstItem="8ex-Ev-vGL" firstAttribute="top" secondItem="zOn-6h-f1C" secondAttribute="bottom" constant="29" id="M1S-Aa-lrU"/>
+                            <constraint firstItem="zOn-6h-f1C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MTN-o5-aSj"/>
+                            <constraint firstItem="wwS-NU-b3F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="251" id="N4w-eK-jNP"/>
+                            <constraint firstItem="zFD-cE-5SF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="PI6-hg-yJu"/>
+                            <constraint firstItem="fiQ-7g-sZZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TMD-Q4-P4X"/>
+                            <constraint firstItem="wwS-NU-b3F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bqr-x7-LcR"/>
+                            <constraint firstItem="fiQ-7g-sZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dXI-hQ-j9n"/>
+                            <constraint firstItem="8ex-Ev-vGL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="eYG-tF-U2O"/>
+                            <constraint firstItem="fiQ-7g-sZZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="guS-Mt-MKu"/>
+                            <constraint firstItem="zFD-cE-5SF" firstAttribute="top" secondItem="wwS-NU-b3F" secondAttribute="bottom" constant="61" id="o50-Q9-dEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zFD-cE-5SF" secondAttribute="bottom" constant="82" id="vmR-bi-Idu"/>
+                            <constraint firstItem="wwS-NU-b3F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wwV-FM-a3E"/>
+                            <constraint firstItem="2fF-PF-Y16" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ykW-8E-HCR"/>
+                            <constraint firstItem="zOn-6h-f1C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zpG-JF-4qh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="8ex-Ev-vGL" id="B0X-C6-p29"/>
+                        <outlet property="resultLabel" destination="wwS-NU-b3F" id="uvQ-eI-5TX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sam.jpg" width="3024" height="4032"/>
+    </resources>
+</document>
